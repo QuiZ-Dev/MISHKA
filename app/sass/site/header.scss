@@ -1,0 +1,31 @@
+.header{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff url(/build/css/img/header__img.png) no-repeat; 
+    background-size: cover;
+    padding-top: 90px;
+    &__title{
+        margin-bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: bold 25px/30px 'Open Sans', sans-serif;
+    }
+    &__card-interer{
+        display: flex;
+        height: 103px;
+        background-color: #63D1BB;
+    }
+    &__card-toy{
+        display: flex;
+        height: 103px;
+        background-color: #63D1BB;
+    }
+}
+.interer__title, .toy__title{
+    max-width: 50%;
+    display: flex;
+    color: #fff;
+    font: bold 19px/24px 'Open Sans', sans-serif;
+    align-items: center;
+    cursor: pointer;
+}

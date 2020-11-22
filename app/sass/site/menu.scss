@@ -1,0 +1,15 @@
+.menu{
+    display: flex;
+    &__logo{
+        height: 35px;
+        width: 86px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__burger{
+        margin-right: 0;
+        width: 8px;
+        height: 14px;
+        cursor: pointer;
+    }
+}
