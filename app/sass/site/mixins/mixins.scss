@@ -1,0 +1,24 @@
+@mixin block ($bg-color,$width, $height:$width,$radius:null) {
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    border-radius: $radius;
+
+    
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+@mixin layer($position, $top, $right:$top, $bottom:$top, $left:$top){
+    position: $position;
+    top: $top;
+    right: $right;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
