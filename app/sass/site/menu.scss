@@ -1,15 +1,61 @@
 .menu{
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    &__item{
+        opacity: 0;
+        transform: translateY(-1600px);
+        transition: opacity 0.2s ease, transform 0.4s ease;
+    }
     &__logo{
-        height: 35px;
-        width: 86px;
-        align-items: center;
+        display: flex;
         justify-content: center;
+        width: 100%;
+        padding-top: 22px;
+
+    }
+    
+    &__lists{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style: none;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        border: 1px solid #e2e2e2b4;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        font: bold $menu-font ;      
     }
     &__burger{
-        margin-right: 0;
-        width: 8px;
-        height: 14px;
+        position: absolute;
+        top: 32px;
+        right: 32px;
         cursor: pointer;
+        padding: 0 6px;
     }
+}
+
+.burger__line{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+.menu__item._active{
+    transform: translateY(0);
+    opacity: 1;
 }
